@@ -1,0 +1,14 @@
+#sidebar {
+    position: fixed;
+    top: 85px;
+    background-color: red;
+    width: 25%;
+    height: 100%;
+    z-index: 200;
+    padding-top: 5px;
+    
+        
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
