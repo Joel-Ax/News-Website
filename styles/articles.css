@@ -1,0 +1,9 @@
+.article-grid {
+  grid-area: content;
+  
+  display: grid;
+  padding: 1rem;
+  width: 60%;
+  row-gap: 20px;
+  background: lightgreen;
+}

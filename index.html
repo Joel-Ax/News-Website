@@ -7,18 +7,21 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/sidebar.css" />
-    <link rel="stylesheet" href="styles/article.css" />
+    <link rel="stylesheet" href="styles/articles.css" />
   </head>
   <body>
-    <div id="main-container">
+    <div class="wrapper">
       <header id="header">
         <nav>
           <label class="logo">SpökNYTT</label>
@@ -33,34 +36,53 @@
           </ul>
         </nav>
         <nav id="right-nav-section">
-            <input class="search-bar" type="text" placeholder="Sök . . ." />
-            <button class="header-button">Köp Plus</button>
-            <button class="header-button">Logga in</button>
+          <input class="search-bar" type="search" placeholder="Sök . . ." />
+          <button class="header-button">Köp Plus</button>
+          <button class="header-button">Logga in</button>
         </nav>
       </header>
-      <div id="middle">
-        <div id="sidebar">
-            <a>Björn vandrade i Lund</a>
-            <a>Älg vandrade med björn i Lund</a>
-
-        </div>
-        <div id="main-content"></div>
+      <div id="sidebar">
+        <a>Björn vandrade i Lund</a>
+        <a>Älg vandrade med björn i Lund</a>
       </div>
+
+      <div class="article-grid">
+        <article class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit saepe reiciendis earum similique eos? Incidunt fugiat ipsam perferendis, accusantium id eligendi quasi, inventore magni voluptates ipsa tenetur velit officiis commodi!</article>
+        <article class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit saepe reiciendis earum similique eos? Incidunt fugiat ipsam perferendis, accusantium id eligendi quasi, inventore magni voluptates ipsa tenetur velit officiis commodi!</article>
+        <article class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit saepe reiciendis earum similique eos? Incidunt fugiat ipsam perferendis, accusantium id eligendi quasi, inventore magni voluptates ipsa tenetur velit officiis commodi!</article>
+        <article class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit saepe reiciendis earum similique eos? Incidunt fugiat ipsam perferendis, accusantium id eligendi quasi, inventore magni voluptates ipsa tenetur velit officiis commodi!</article>
+        <article class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit saepe reiciendis earum similique eos? Incidunt fugiat ipsam perferendis, accusantium id eligendi quasi, inventore magni voluptates ipsa tenetur velit officiis commodi!</article>
+      </div>
+
       <footer id="footer">
-        <div id="left-footer-section">
-          <h3>TIPSA OSS</h3>
-          <br>
-          <span>0231-45678910</span>
-          <br>
-          <span>Spöknytt@tipsa.se</span>
+        <div class="footer-nav">
+          <h2>Tipsa oss</h2>
+          <li>SMS: <a class="footer-link">021-3456789</a></li>
+          <li>Email: <a class="footer-link">Spöknytt@tipsa.se</a></li>
         </div>
-        <div id="middle-footer-section">Sociala Medier</div>
-        <div id="right-footer-section">
-          <h3>Kontakta oss</h3>
-          <br>
-          <span>Kundtjänst</span>
-          <br>
-          <span>Jobbas hos oss</span>
+        <div class="footer-nav">
+          <h2 class="social-media">Sociala Medier</h2>
+          <li>
+            <a href="https://www.twitter.com" target="_blank">
+              <img class="social-media-icon" src="images/twitter.svg"/>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+              <img class="social-media-icon" src="images/facebook.svg"/>
+            </a>
+          </li>
+          <li>
+            <a href="play.google.com/store/apps" target="_blank">
+              <img class="appstore-icon" src="images/googleplay.svg"/>
+            </a>
+            <a href="https://apple.com/se/app-store/" target="_blank">
+              <img class="appstore-icon" src="images/appstore.svg"/>
+            </a>
+          </li>
+        </div>
+        <div class="footer-nav">
+          <h2>Kontakta oss</h2>
+          <li><a class="footer-link">Support</a></li>
+          <li><a class="footer-link">Jobbas hos oss</a></li>
         </div>
       </footer>
     </div>
